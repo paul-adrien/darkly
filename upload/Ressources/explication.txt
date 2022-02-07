@@ -1,0 +1,17 @@
+Dans la page upload, le formulaire ne verifie pas bien le fichier qui est envoyer
+car si on upload le fichier a`whoami`z.jpg.jpeg, whoami est dan sle payload de l'image 
+et peut remplacer une variable dans du code php et donc injecter du code
+
+Example Vulnerable Code
+Code:
+
+<?php
+$variable = "test`whoami`test";
+system("echo ".$variable);
+?>
+Output:
+
+testwww-datatest
+
+sources: 
+https://www.onsecurity.io/blog/file-upload-checklist/

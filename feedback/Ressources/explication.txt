@@ -1,0 +1,4 @@
+XSS (Cross Site Scripting)
+ajouté dans les commentaires: <svg/onload=alert('XSS')>a <script> alert(1) </script>
+
+solution: il faut parser toutes les entrer utiliser par un utilisateur

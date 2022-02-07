@@ -1,0 +1,15 @@
+Cette vulnérabilité se produit lorsqu'une application accepte une entrée 
+non approuvée contenant une valeur d'URL et ne la nettoie pas. 
+Cette valeur d'URL pourrait amener l'application Web à rediriger 
+l'utilisateur vers une autre page, telle qu'une page malveillante 
+contrôlée par l'attaquant.
+
+Cette vulnérabilité peut permettre à un attaquant de lancer avec succès
+une escroquerie par hameçonnage et de voler les informations 
+d'identification de l'utilisateur. 
+Étant donné que la redirection provient de l'application réelle, 
+les tentatives de phishing peuvent avoir une apparence plus fiable.
+
+Quand on inspecte le code et plus précisement les liens
+on remarque que les liens facebook twitter et 42 
+sont des redirections et qu'on peut donc y mettre n'importe quel site

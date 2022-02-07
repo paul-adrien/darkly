@@ -1,0 +1,15 @@
+Après un premier test de brute force en envoyant plein de requete curl on remarque
+que l'on est pas bloquer du site et donc que l'on peut récupérer
+le username et password en testant des list de user et password commun
+
+en utilisant le script on obtient:
+
+username: admin, password: shadow
+username: root, password: shadow
+username: test, password: shadow
+
+on pourrait aller beaucoup plus vite avec par exemple hatch, Burp etc (plugin ou script tout fait)
+
+Solution: proxy pour bloquer si une ip envoie plus de x requete toutes les x secondes
+
+source: https://superuser.com/questions/234810/how-do-i-compare-two-files-with-a-shell-script

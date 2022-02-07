@@ -1,0 +1,14 @@
+On remarque que dans les cookies il y a une variable I_am_admin
+avec comme valeur: 68934a3e9455fa72420237eb05902327
+On essaye de la decrypter et on obtient: false crypter en md5
+on imagine qu'en mettant true crypter en md5 que nous allons devenir
+admin 
+
+true en md5: b326b5062b2f0e69046810717534cb09
+
+en le mettant dans value et que l'on change de page cela fonctionne !
+
+sources: 
+https://www.dcode.fr/fonction-hash
+https://www.dcode.fr/hash-md5
+https://github.com/OWASP/wstg/blob/master/document/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.md
