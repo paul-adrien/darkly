@@ -1,0 +1,5 @@
+Dans la page survey, on tombe sur un tableau avec un classement où l'on peut voter grâce un champs de séléction de 1 à 10,
+en inspectant on voit que la valeur est envoyer sans être vérifier, donc on peut changer la valeur envoyée,
+par exemple mettre plus que 10 et ainsi fausser les résultats.
+
+Solution: Passer par une fonction pour valider la valeur avant de l'envoyer.
