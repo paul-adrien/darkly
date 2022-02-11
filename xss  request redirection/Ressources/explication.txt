@@ -1,0 +1,9 @@
+Dans la page home il y a plusieurs lien dont l'image de la nsa où
+si on change 'nsa' par: <data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4=
+on obtient un flag
+
+grace a cela on va rentrer des donnée eronner dans la variable src avec du code pour l'executé et par exemple récuperer les cookies
+
+solution: ne pas injecter directeemnt la data mais plutot aller chercher par id et verifier l'id avant la redirection
+
+source: https://cheatsheetseries.owasp.org/cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.html
