@@ -3,4 +3,4 @@ pour avoir un nouveau mot de passe mais en inspectant le code
 on remarque que l'on peut changer l'adresse mail pour mettre la sienne
 et donc récuperer le mot de passe.
 
-Solution: gérer le mot de passe dans le back
+Solution: gérer l'envoie de mail dans le backend et surtout avec une adresse mail qui appartient à un compte existant

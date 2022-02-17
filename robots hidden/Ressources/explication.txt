@@ -1,0 +1,2 @@
+Grace a robots.txt on voit qu'il y a un chemin hidden qui contient plein de lien
+avec a chaque fois un readme. avec un script qui va regarder tous les readme on tombe sur un flag

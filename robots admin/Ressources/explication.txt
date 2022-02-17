@@ -1,4 +1,4 @@
-en ragrdans l'url /robots.txt on voir le chemin /whatever puis htpasswd qui contient
+en regardans l'url /robots.txt on voir le chemin /whatever puis htpasswd qui contient
 
 root:8621ffdbc5698829397d97767ac13db3 => root:dragon crypter en md5
 

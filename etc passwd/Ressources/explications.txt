@@ -1,0 +1,8 @@
+Si on met dans l'url le chemin: ?page=../../../../../../../../../etc/passwd on obtient un flag
+
+ce fichier contient les mot de passe UNIX des utilisateurs
+
+Pour empecher cela il faut bloquer l'accès aux url que l'on a pas prévu 
+de donnée l'accès
+
+source: https://owasp.org/www-community/attacks/Path_Traversal
